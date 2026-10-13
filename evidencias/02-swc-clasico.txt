@@ -1,0 +1,19 @@
+Configuración en .swcrc:
+{
+  "jsc": {
+    "target": "es2022",
+    "parser": { "syntax": "ecmascript", "jsx": true },
+    "transform": { "react": { "runtime": "classic" } }
+  }
+}
+
+Comando ejecutado:
+npx swc saludo.jsx
+
+Salida:
+Successfully compiled 1 file with swc.
+function Saludo({ nombre }) {
+    return /*#__PURE__*/ React.createElement("div", {
+        className: "tarjeta"
+    }, /*#__PURE__*/ React.createElement("h1", null, "Hola, ", nombre), /*#__PURE__*/ React.createElement("p", null, "Esto es JSX."));
+}
